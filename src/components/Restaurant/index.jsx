@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import Button from "components/Button";
 import { useParams } from "react-router-dom"
-import uuid4 from 'uuid4'
+
 
 const Restaurant = () => {
 const { slug } = useParams()
