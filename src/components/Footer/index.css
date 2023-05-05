@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+.footer-menu {
+  background: rgba(255,255,255,.5);
+  box-shadow: 3px 0 7px rgba(0,0,0,.3);
+  text-align: center;
+  padding: 20px 0px 15px 0;
+ 
+}
+.footer-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menu-footer {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
