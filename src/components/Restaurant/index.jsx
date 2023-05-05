@@ -7,7 +7,6 @@ const Restaurant = () => {
 const { slug } = useParams()
 const [restourant, setRestourant] = useState([])
 const [menu, setMenu] = useState([]) 
-const [count, setCount] = useState(1)
 
 useEffect(() => {
     fetch(`https://www.bit-by-bit.ru/api/student-projects/restaurants/${slug}`)
