@@ -9,22 +9,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-  
-/*   background: linear-gradient(to top left, #ffffff, #f7c1a6d3) no-repeat, url("background (2).jpg") repeat; 
+
+  /*   background: linear-gradient(to top left, #ffffff, #f7c1a6d3) no-repeat, url("background (2).jpg") repeat; 
   height: 100%;
   background-position: center;
   border: 0 solid; */
 
-  background: linear-gradient(to top left, #ffffff, #f7c1a689) no-repeat, url("blurred-cherry.jpg");
+  background: linear-gradient(to top left, #ffffff, #f7c1a689) no-repeat,
+    url("blurred-cherry.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed
-        
-
+  background-attachment: fixed;
 }
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -32,8 +29,19 @@ code {
 }
 
 .nav {
-      opacity: 0.5;
-      background: -webkit-linear-gradient(90deg,#ffffff,#20a2daa0,#ffffff,#f77e45); /* Chrome 10-25, Safari 5.1-6 */ 
-      background: linear-gradient(90deg,#ffffff,#cbf0ffba,#48b3e0c9,#f37338); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
-
+  opacity: 0.5;
+  background: -webkit-linear-gradient(
+    90deg,
+    #ffffff,
+    #20a2daa0,
+    #ffffff,
+    #f77e45
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    #cbf0ffba,
+    #48b3e0c9,
+    #f37338
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

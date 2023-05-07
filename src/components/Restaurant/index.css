@@ -1,86 +1,86 @@
 .recipe {
-    display: flex;
-    flex-direction: row;
-	align-items: center;
-    margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
 }
 .pizza-box {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .pizza-box {
-	flex: 3 1 30ch;
-	height: calc(240px + 5vw);
-	overflow: hidden;
+  flex: 3 1 30ch;
+  height: calc(240px + 5vw);
+  overflow: hidden;
 }
 .menu-img {
-	max-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	object-fit: cover;
-    object-position: 50% 50%;
+  max-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 .recipe {
-	border: 2px solid #F2F2F2;
-	border-radius: 8px;
-	overflow: hidden;
+  border: 2px solid #f2f2f2;
+  border-radius: 8px;
+  overflow: hidden;
 }
 .recipe-content {
-	padding: 16px 32px;
-	flex: 4 1 40ch;
+  padding: 16px 32px;
+  flex: 4 1 40ch;
 }
 .recipe-tags {
-	margin: 0 -8px;
+  margin: 0 -8px;
 }
 .recipe-tag {
-	display: inline-block;
-	margin: 8px;
-	font-size: .875em;
-	text-transform: uppercase;
-	font-weight: 600;
-	letter-spacing: .02em;
-	color: var(--primary);
+  display: inline-block;
+  margin: 8px;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--primary);
 }
 .recipe-title {
-	margin: 0;
-	font-size: clamp(1.4em, 2.1vw, 2.1em);
-	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+  margin: 0;
+  font-size: clamp(1.4em, 2.1vw, 2.1em);
+  font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
 }
 .recipe-metadata {
-	margin: 0;
-    display: flex;
-    flex-direction: row;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
 }
 .recipe-votes {
-	font-size: .825em;
-	font-style: italic;
-	color: var(--lightgrey);
+  font-size: 0.825em;
+  font-style: italic;
+  color: var(--lightgrey);
 }
 .recipe-desc {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 .recipe-save {
-	display: flex;
-	align-items: center;
-	padding: 6px 14px 6px 12px;
-	border-radius: 4px;
-	border: 2px solid currentColor;
-	color: var(--primary);
-	background: none;
-	cursor: pointer;
-	font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 6px 14px 6px 12px;
+  border-radius: 4px;
+  border: 2px solid currentColor;
+  color: var(--primary);
+  background: none;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 body {
-	font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
 @media (max-width: 600px) {
-    .recipe {
-        flex-direction: column;
-        margin: 10px 5px;
-    }
+  .recipe {
+    flex-direction: column;
+    margin: 10px 5px;
+  }
 }

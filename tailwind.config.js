@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'pink_light': '#fbedef',
-        'pink_header': '#ed92a0',
+        pink_light: "#fbedef",
+        pink_header: "#ed92a0",
       },
     },
   },
