@@ -5,8 +5,6 @@ const Header = () => {
   return (
     <header className="top-menu mb-20">
       <p className="navbar-logo font-semibold text-center text-[#70BABB] text-xl">
-      
-
         Доставка еды "Азбука вкуса"
       </p>
       <ul className="menu-main">
