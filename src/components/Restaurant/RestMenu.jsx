@@ -7,7 +7,7 @@ const RestMenu = () => {
 const { slug } = useParams()
 const [menu, setMenu] = useState([]) 
 const [restourant, setRestourant] = useState([])
-
+const [count, setCount] = useState(1)
 
 useEffect(() => {
     fetch(`https://www.bit-by-bit.ru/api/student-projects/restaurants/${slug}`)
@@ -22,7 +22,21 @@ useEffect(() => {
 }, [slug])
 
 
+function plus() { 
+  if (count < 10) {
+      setCount(count + 1) 
+  } else {
+      return
+  }
+}
 
+function minus() { 
+  if (count > 0) {
+      setCount(count - 1) 
+  } else {
+      return
+  }
+}
   return (
 <>
   
@@ -54,15 +68,22 @@ useEffect(() => {
                       {items.description}
                     </div>
                     <div className="mt-4 mb-4 text-md font-bold text-3xl">
-                      {items.price} 
+                      {items.price} ₽
                     </div>
                   </div>
                 </div>
               
-
-                <Button title="Добавить в корзину" />
+                <div className="flex flex-row justify-between mt-6">
+                                    <div className="flex flex-row" >
+                                        <button onClick={minus} className="mx-2 py-1 px-2 font-bold">-</button>
+                                        <p className="py-1 px-2">{count} шт.</p>
+                                        <button onClick={plus} className="mx-2 py-1 px-2 font-bold">+</button>
+                                    </div>
+                                    <p className="py-1 px-6 border rounded-md">{count*items.price}</p>
+                                    <div><Button title="В корзину" /></div>
+                         
               </div>
-             
+              </div>
             </div>
           
  
