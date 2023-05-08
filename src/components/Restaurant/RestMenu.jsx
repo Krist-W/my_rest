@@ -5,15 +5,10 @@ import { useParams } from "react-router-dom";
 const RestMenu = () => {
   const { slug } = useParams();
   const [menu, setMenu] = useState([]);
-  const [restourant, setRestourant] = useState([]);
+  
   const [count, setCount] = useState(1);
 
-  useEffect(() => {
-    fetch(`https://www.bit-by-bit.ru/api/student-projects/restaurants/${slug}`)
-      .then((response) => response.json())
-      .then((date) => setRestourant(date));
-  }, [slug]);
-
+ 
   useEffect(() => {
     fetch(
       `https://www.bit-by-bit.ru/api/student-projects/restaurants/${slug}/items`
@@ -84,7 +79,7 @@ const RestMenu = () => {
                       +
                     </button>
                   </div>
-                  <p className="p-5">{count * items.price}</p>
+                  <p className="p-5">Сумма {count * items.price} ₽</p>
                   <div>
                     <Button title="В корзину" />
                   </div>
