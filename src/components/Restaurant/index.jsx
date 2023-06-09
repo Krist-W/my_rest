@@ -1,6 +1,5 @@
 
 import { useParams } from "react-router-dom";
-import { DotSpinner } from '@uiball/loaders'
 import React, { useEffect, useState } from "react";
 import Button from "components/Button";
 import { v4 as uuidv4 } from "uuid";
