@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { DotSpinner } from '@uiball/loaders'
 
 function Home() {
   const [restaurant, setRestaurant] = useState([]);
@@ -15,7 +16,15 @@ function Home() {
   showRestaurant();
 
   return (
+    
     <div className="max-w-screen-lg m-auto">
+          {restaurant.length === 0 && (
+    <div className="flex items-center justify-center h-1/2">
+                    <DotSpinner size={80} speed={0.9} color="black" />
+                    </div>
+                    //криво работает, подумать как реализовать его в app, чтобы на всех страницах был до полной загрузки контента
+                )} 
+                
       <h1 className="font-semibold text-center text-[#70BABB] mb-20 text-5xl">
         Рестораны
       </h1>
@@ -26,7 +35,8 @@ function Home() {
             return (
               <Link
                 to={`/restaurants/${item.slug}`}
-                class="group relative block bg-white h-72 rounded-3xl"
+                className="group relative block bg-white h-72 rounded-3xl"
+                key={item.id}
               >
                 <img
                   alt=""
